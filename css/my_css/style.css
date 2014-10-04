@@ -1,0 +1,15 @@
+.side{
+	float: left;
+}
+
+.side1{
+	float: right;
+}
+
+.footer{
+	font-size: 60%;
+	font-family: Cambria;
+	font-weight: bold;
+	width: 600px;
+	margin: auto;
+}

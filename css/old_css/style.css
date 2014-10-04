@@ -1,0 +1,27 @@
+h1{
+	color:red;font-family: Times New Roman;
+}
+	
+
+h3{
+	color:red; font-family: Castellar;
+}
+
+
+blockquote{
+	border: 1px solid white; 
+	text-align: center;
+	margin-left: 0;
+}
+
+.wrap{
+	width: 600px;
+	margin: auto;
+	color: white;
+};
+
+.wap{
+	width: 600px;
+	margin: auto;
+	color: black;
+};

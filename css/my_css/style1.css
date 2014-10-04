@@ -1,0 +1,17 @@
+.mycontent{
+	float: left;
+	font-family: Candara;
+	font-size: 150%;
+	color: #fff;
+}
+
+.mytitle{
+	font-family: Candara;
+	color: #fff;
+}	
+
+.slide_it{
+	float: right;
+	color: #fff;
+	font-family: Candara;
+}

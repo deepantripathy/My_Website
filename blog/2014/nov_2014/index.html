@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Blog || Deepan </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../css/new_css/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../css/new_css/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="../../../index.html">Home</a>
+          <a class="blog-nav-item" href="../../../about/index.html">About</a>
+          <a class="blog-nav-item" href="index.html">Blog</a>
+          <a class="blog-nav-item" href="../../../projects/index.html">Projects</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">My Blog</h1>
+        <p class="lead blog-description">Hello friends, welcome to <em>my blog </em>. This is a place where you can get to know me, like what I am doing, my experience from day-to-day life etc. Hope you like it. Happy Blogging</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title"> Basics Of Embedded Systems</h2>
+            <p class="blog-post-meta">Tuesday 4,2014 by <a href="https://www.facebook.com/deepan.tripathy">Deepan </a></p> 
+
+          <p>Hello friends today I will tell you about Embedded Systems, how I came to know about it, how I learnt it, and now how I am enjoying it.</p>
+
+          <p>A general definition of embedded system is that it is a basic method of controlling or assisting various devices for a specific purpose. These are basic components which are installed in the device. Users in most cases are not even aware of their presence. For example a digital thermometer ,users think that it is just a device but inside it lies various components. </p>
+          
+          <p>These are designed to do some specific task, rather than general purpose computer for multiple tasks. They are not always stand alone devices instead they have smaller parts that constitute to build a large device called embedded device. These can be operated using specifc programme instructions which are called as firmware They are stored in Microcontroller chips like ATMEGA 16,ATMEGA 32, LPC2148, ARM cortex etc. </p> 
+
+          <p>Before diving into the world of embedded systems you should be aware of about voltage regulators, LEDs, LDRs (Light dependant resistors), IRLED (Infrared red LED), keys like SPST (single pull single throw), SPDT(single pull double throw), DPDT(double pull double throw), relays (basically switching devices), drivers (like L293D, L298D ICs for driving motors).</p> 
+
+          <div class="side">
+          <blockquote><img src="../../../img/blog_img/7.jpg" /> <img src="../../../img/blog_img/8.jpg"></blockquote>
+          </div>  
+
+          <br/>
+
+          <p>MICRO-CONTROLLERS are those devices that consists of both micro-processors and some ICs. The basic version of a micro-controller is an 8051 architecture. The  8051 architecture is basic element of an 8-bit micro-controller. I prefer to work on AVR micro-controller board with ATMEGA16 micro-controller. You can even go for ATMEGA8, ATMEGA32 etc.as per your wish.</p> 
+
+          <blockquote> <img src="../../../img/blog_img/13.jpg" /></blockquote>
+          <br/>
+          <p><h3>Steps For Creating A Simple Embedded Programe:-</h3></p>
+
+          <p>
+             <ul>
+                  <li>Declaration of data register (DDRX).</li>
+                  <li>Initialisation:- <br/>
+  PORTX=0x00 (Initialise the whole port with value 0(zero) in hexadecimal format). </li>
+                  <li>Create a makefile and save it in a folder. </li>
+                  <li>Write the program in Programmers Notepad [WinAVR] and compile it.</li>
+                  <li>Load the program on your micro-controller. </li>
+             </ul>
+          </p>
+
+          <br/>
+          <p><h3>Steps For Creating A Makefile:-</h3></p>
+          <p>
+            <ul>
+                <li> Open mfile -> Click on Makefile -> Enable Editing of Makefile</li>
+                <li> Click on Makefile -> Main file name -> write file name as filename</li>
+                <li> Set #F_CPU=16000000<br/>
+                  F_CPU=8000000 <br/>
+                        as #F_CPU=8000000 <br/>
+                   F_CPU=16000000
+                </li>
+                <li> Click Makefile -> MCU type -> Atmega -> Atmega16 (since we are using an ATMEGA16 micro-controller)</li>
+                <li> Makefile -> Debug format -> AVR-ext-COFF</li>
+                <li>6.  Makefile ->Programmer ->select any -> (update with) -> usbasp <br/>
+                AVR DUDE_PROGRAMMER=usbasp
+                </li>
+                <li> Makefile -> Port ->usb
+                  Save as Makefile in a folder with extension as “All files”.
+                </li>
+
+            </ul>
+          </p>
+          <blockquote><img src="../../../img/blog_img/14.jpg"/></blockquote>
+          <br/>
+
+          <p><h3>Your Embedded C Code</h3></p>
+          <blockquote><img src="../../../img/blog_img/15.jpg" /></blockquote>
+          <br/>
+
+          <p><h3>Procedure For Compiling The Code:-</h3></p>
+          <p>
+              <ul>
+                  <li> Click on Tools -> Make Clean ->Make all </li>
+              </ul>   
+          </p>
+          <blockquote><img src="../../../img/blog_img/16.jpg"/><img src="../../../img/blog_img/17.jpg" /></blockquote>
+          <p>This creates a hexfile ie a file with .hex extension. Now to load this .hex file onto the controller we require a software ie HID Bootflash. It is actually a loader.</p>
+
+          <blockquote><img src="../../../img/blog_img/18.jpg"></blockquote>
+
+          <p>To make you more aquanted with DDRX and PORTX concept I will say that we use them for declarations and initialisations. like:-</p>
+
+          <blockquote><img src="../../../img/blog_img/19.jpg"/></blockquote>
+          <br/>
+          <p>I hope that all of this is enough to start of with Embedded Systems. These are just the basics of Embedded Systems. First get a command on these basics then you can go on for high level projects on Embedded Systems. You can go through the Projects section of my website to know about my projects. You can even contact me if you want any sort of stuffs like micro-controller, micro-controller boards, lcd, uart, xbee, sensors etc.</p>
+          </div><!-- /.blog-post -->      
+
+          <ul class="pager">
+           <li><a href="../oct_2014/index.html">Previous</a></li> 
+            <li><a href="#">Next</a></li>
+          </ul>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Recent Blogs</h4>
+            <ol class="list-unstyled">
+              <li><a href="index.html">Basics Of Embedded Systems</a></li>
+              <li><a href="../oct_2014/index.html">Experience of The Haunted House</a></li>
+              <li><a href="../sept_2014/index.html">A Day with @ Photographer</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="../dec_2014/index.html">December 2014</a></li>
+              <li><a href="index.html">November 2014</a></li>
+              <li><a href="../oct_2014/index.html">October 2014</a></li>
+              <li><a href="../sept_2014/index.html">September 2014</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Find Me</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/deepantripathy401">GitHub</a></li>
+              <li><a href="https://twitter.com/deepantripathy">Twitter</a></li>
+              <li><a href="https://www.facebook.com/deepan.tripathy">Facebook</a></li>
+            </ol>
+          </div>
+
+          <!--Twitter_blog starts!-->
+           <div class="sidebar-module sidebar-module-inset">
+            <a class="twitter-timeline" href="https://twitter.com/deepantripathy" data-widget-id="513585412594364417">Tweets by @deepantripathy</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>          
+          </div> <!--Twitter_blog ends !-->
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>Blogs Of : <a href="https://twitter.com/deepantripathy"> Deepan Krishna Tripathy</a> </p>
+      <p>
+        <a href="index.html">Back to top</a>
+      </p>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
